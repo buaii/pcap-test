@@ -43,3 +43,15 @@ sample: pcap-test wlan0
 * git에는 소스 코드(h, c, cpp)만 올리지 말고 프로젝트 파일(Makefile 혹은 *.pro)도 같이 올릴 것.
 
 * 메일에는 코드 파일을 첨부하지 말고 git 주소만 알려줄 것.
+
+### 참고자료
+### Ethernet Header
+![image](https://github.com/user-attachments/assets/cfb0fc19-0025-40a3-a00e-150aaaadbc9c)
+
+### IP Header
+![image](https://github.com/user-attachments/assets/ef7b0d99-40f1-4041-8650-0bd5947eebbf)
+
+### TCP Header
+![image](https://github.com/user-attachments/assets/665c742e-b95d-4e1f-8168-461e06c6bdd9)
+
+
