@@ -1,8 +1,22 @@
+CC = gcc
+
 LDLIBS += -lpcap
 
-all: pcap-test
+TARGET = pcap-test
 
-pcap-test: pcap-test.c
+SRCS = pcap-test.c
+
+HEADERS = pcap-test.h
+
+OBJS = $(SRCS:.c=.o)
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) -o $@ $^ $(LDLIBS)
+
+%.o: %.c $(HEADERS)
+	$(CC) -c $<
 
 clean:
-	rm -f pcap-test *.o
+	rm -f $(OBJS) $(TARGET)
